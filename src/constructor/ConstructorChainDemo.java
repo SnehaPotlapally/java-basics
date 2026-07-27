@@ -37,7 +37,7 @@ public class ConstructorChainDemo {
     }
 
     public void display() {
-        System.out.println("ID: " + id + " | Name: " + name + " | Dept: " + department);
+        System.out.println("ID: " + this.id + " | Name: " + this.name + " | Dept: " + this.department);
     }
 
     public static void main(String[] args) {
