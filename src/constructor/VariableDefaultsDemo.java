@@ -17,7 +17,7 @@ public class VariableDefaultsDemo {
     public void localVariableExample() {
         // Local variables (allocated on the STACK)
         // Java does NOT give these default values.
-        int localInt;
+        int localInt = 0;
         
         System.out.println("\n--- Local Variables ---");
         
@@ -25,7 +25,7 @@ public class VariableDefaultsDemo {
         // "variable localInt might not have been initialized"
         // System.out.println(localInt); 
         
-        localInt = 50; // You must assign a value manually before using it
+       // localInt = 50; // You must assign a value manually before using it
         System.out.println("localInt after manual assignment: " + localInt);
     }
 
