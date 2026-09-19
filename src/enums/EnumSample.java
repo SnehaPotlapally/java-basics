@@ -23,10 +23,11 @@ class Main {
         EnumSample parsedDay = EnumSample.valueOf(input);
         System.out.println("Using valueOf(): Found constant " + parsedDay + " with ordinal " + parsedDay.ordinal());
 
-        // Demonstration of all constants using name() and ordinal()
-        System.out.println("\nAll constants in EnumSample:");
-        for (EnumSample d : EnumSample.values()) {
-            System.out.println("Name: " + d.name() + " | Ordinal: " + d.ordinal());
+        // Demonstration of all constants using values() and printing ordinal()
+        System.out.println("\nIterating through EnumSample.values():");
+        for (EnumSample sample : EnumSample.values()) {
+            System.out.println(EnumSample.values() + " = " + sample);
+            System.out.println("Ordinal of " + sample.name() + " is " + sample.ordinal());
         }
     }
 }
